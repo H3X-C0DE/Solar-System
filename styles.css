@@ -3,3 +3,152 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #d7e3ec;
+  background-image: url("images/planetmovebg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: kiona;
+  letter-spacing: 2.5vh;
+  color: #eef3f7;
+  font-size: 48px;
+  text-shadow: 0 0 28px #d3b1c2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eef3f7;
+}
+
+h3 {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #eef3f7;
+  text-shadow: 0 0 28px #d3b1c2;
+  margin-top: 30vh;
+  margin-bottom: 0vh;
+  padding-bottom: 0vh;
+}
+
+h4 {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 1vh;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
+}
+
+p {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #eef3f7;
+  text-align: left;
+  margin-top: 0vh;
+}
+
+a {
+  letter-spacing: 1vh;
+}
+
+.navMenu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: right;
+  padding: 2vh 3vh;
+  background: rgba(57, 57, 57, 0.091);
+  backdrop-filter: blur(5vh);
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.navMenu a {
+  display: flex;
+  padding-left: 5vh;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d7e3ec5e;
+  transition: 0.5s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #d7e3ec;
+  text-shadow: 0 0 20px #d3b1c2;
+  transition: 0.5s ease-in-out;
+}
+
+.content {
+  background: rgba(57, 57, 57, 0.091);
+  padding: 20px;
+  text-align: center;
+  margin-top: 50vh;
+  margin-bottom: 12vh;
+  backdrop-filter: blur(5vh);
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.bgimg1 {
+  background-image: url("/images/IMG-3187.jpg");
+  height: 50%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2vh;
+}
+
+.planets {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#wasp,
+#kepler,
+#hd {
+  padding: 10px;
+  margin: 10px;
+  width: 374px;
+  height: 867px;
+  background: rgba(57, 57, 57, 0.091);
+  backdrop-filter: blur(5vh);
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: kiona;
+  src: url(Kiona-Regular.ttf);
+}
