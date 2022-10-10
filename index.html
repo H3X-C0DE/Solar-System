@@ -9,10 +9,54 @@
       content="Kodehode Assignment for module-a. Team: Suganthi, Vetle, Ingrid"
     />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link rel="stylesheet" href="styles.css" />
-    <script href="script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+    <script type="text/javascript" src="/script.js" defer></script>
     <title>Solar System Assignment</title>
   </head>
+  <header id="navbar">
+    <nav class="navbar-container nav-container">
+      <a href="/" class="home-link">
+        <img
+          id="logo"
+          class="logo-img"
+          src="./assets/placeholder-logo.png"
+          alt="Placeholder logo"
+        />
+        <span>The Void</span>
+      </a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        aria-controls="navbar-menu"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-home">Home</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-about">About</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-planets">Planets</a>
+          </li>
+          <li class="navbar-item slide">
+            <a class="navbar-link" href="#top-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <body>
+    <section id="top-home"></section>
+    <section id="top-about"></section>
+    <section id="top-planets"></section>
+    <section id="top-contact"></section>
   </body>
 </html>
