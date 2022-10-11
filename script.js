@@ -28,7 +28,7 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
     end: "bottom 20%",
     // set "true" to see animation start and end points guidelines
     // should always be set to false.
-    markers: true,
+    markers: false,
     // once div reach start point it will ease in opacity 0% = 100%
     onEnter: function () {
       gsap.fromTo(
