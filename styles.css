@@ -300,3 +300,111 @@ h1 {
   opacity: 0;
   visibility: hidden;
 }
+/* contact form */
+#container{
+  width:960px;
+  margin:0 auto;
+}
+.paragraph{
+  margin:50px;
+  color:white;
+  font-size:20px;
+}
+.info{
+  
+  display:flex;
+  width:460px;
+  float:left;
+  justify-content: flex-start;
+}
+.submission{
+  float:left;
+  justify-content: center;
+  align-items: right;
+}
+.flex-cont{
+  margin-top:35px;
+  width:460px;
+  float:right;
+}
+.info paragraph{
+  border:none;
+  outline:none;
+  background:none;
+  font-size:20px;
+  color:white;
+  padding:5px 3px; 
+}
+.paragraph{margin-bottom:5px;
+  border-radius:5px;
+  font-size:20px;
+  padding:15px;
+  box-shadow: inset 8px 8px 8px black,
+              inset -8px -8px 8px #101111 ;}
+.flex-cont input{
+  /*font-size:20px;
+  margin:10px;
+  font-weight:500;
+  cursor: pointer;
+  border:none;
+  border-radius:15px;
+  box-shadow:*/
+  border:none;
+  outline:none;
+  background:none;
+  font-size:20px;
+  color:white;
+  padding:5px 5px; 
+}
+.name, .mail{
+  margin-bottom:5px;
+  border-radius:5px;
+  box-shadow: inset 8px 8px 8px black,
+              inset -8px -8px 8px #101111 ;
+}
+.flex-cont textarea{
+
+  border:none;
+  outline:none;
+  background:none;
+  font-size:20px;
+  color:white;
+  padding:10px 5px; 
+}
+.txt{
+  margin-bottom:5px;
+  border-radius:5px;
+  box-shadow: inset 8px 8px 8px black,
+              inset -8px -8px 8px #101111 ;
+
+}
+.sub{margin-bottom:5px;
+  border-radius:5px;
+  box-shadow: inset 8px 8px 8px black,
+              inset -8px -8px 8px #101111 ;
+  align-items: center;
+}
+.info img{
+  float:left;
+  justify-content: flex-start;
+  align-items:left;
+}
+img:hover{
+  background-color: white;
+}
+/*input:hover{
+  box-shadow: inset 8px 8px 8px black,
+  inset -8px -8px 8px;
+  opacity:0.2;
+}
+.txt:hover{
+  box-shadow: inset -8px -8px -8px black
+  inset -8px -8px -8px;
+  opacity:0.3;
+
+}
+p:hover{
+  box-shadow: inset 8px 8px 8px 
+  inset -8px -8px 8px;
+  opacity:0.3;
+}*/
