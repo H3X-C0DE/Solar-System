@@ -20,7 +20,7 @@ navbarMenu.addEventListener("click", toggleNavbarVisibility);
 // CONTENT SCROLL ANIMATION //
 gsap.registerPlugin(ScrollTrigger);
 // REVEAL Trigger
-gsap.utils.toArray(".revealUp").forEach(function (elem) {
+gsap.utils.toArray(".reveal").forEach(function (elem) {
   // triggers the animation at 80% and 20% of the screen
   ScrollTrigger.create({
     trigger: elem,

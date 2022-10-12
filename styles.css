@@ -7,11 +7,22 @@
 }
 body {
   font-family: "Oxygen", sans-serif;
-  color: var(--body-color);
+  color: var(--body-color-light);
+  background-image: url("/assets/the-void.jpg");
+  height: 50%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 :root {
   --body-color-dark: #212529;
   --body-color-light: #d7e3ec;
+  --dark-blue: #080839;
+  --blue-pigment: #4633a8;
+  --purple-plum: #8e59be;
+  --orchid-c: #d091ca;
 
   --body-bg: #e8eef1;
   --blue: #0d6efd;
@@ -44,7 +55,9 @@ body {
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #212529;
+  --darker: #0e1011;
 }
+
 .navbar-links {
   text-transform: uppercase;
   font-weight: 300;
@@ -73,7 +86,11 @@ button:active {
 #navbar {
   position: fixed;
   height: 64px;
-  background-color: var(--body-bg);
+  border-top: 0.3vh solid rgba(166, 166, 166, 0.173);
+  border-bottom: 0.3vh solid rgba(166, 166, 166, 0.171);
+  backdrop-filter: blur(5vh);
+  background: rgba(57, 57, 57, 0.091);
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -93,7 +110,7 @@ button:active {
 
 .home-link,
 .navbar-link {
-  color: var(--dark);
+  color: var(--white);
   text-decoration: none;
   display: flex;
   font-weight: 400;
@@ -101,7 +118,7 @@ button:active {
 }
 
 .home-link:is(:focus, :hover) {
-  color: var(--dark);
+  color: var(--white);
 }
 
 .navbar-link {
@@ -113,7 +130,7 @@ button:active {
 }
 /* nav link text */
 .navbar-link:is(:focus, :hover) {
-  color: var(--blue);
+  color: var(--purple-plum);
   transition: 0.2s ease-in-out;
 }
 
@@ -138,11 +155,11 @@ button:active {
   width: 25px;
   height: 4px;
   margin: 2px;
-  background-color: var(--dark);
+  background-color: var(--light);
 }
 
 #navbar-toggle:is(:focus, :hover) .icon-bar {
-  background-color: var(--blue);
+  background-color: var(--purple-plum);
 }
 #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
@@ -181,7 +198,6 @@ button:active {
 .navbar-links {
   list-style: none;
   position: absolute;
-  background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,6 +210,9 @@ button:active {
 
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 1em;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar-links {
@@ -201,7 +220,9 @@ button:active {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: var(--body-bg);
+  backdrop-filter: blur(5vh);
+  background: rgba(57, 57, 57, 0.091);
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,27 +254,16 @@ button:active {
     height: 100%;
   }
 }
-
 /* MOBILE */
 @media only screen and (max-width: 700px) {
-  .container {
-    width: 100vw;
+  body {
+    background-image: url(/assets/mobil-void.jpg);
   }
-  .banner {
-    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 50% 100%, 0% 90%, 0 0);
+  .hero-title {
+    margin: 0.5em;
   }
   .under-title {
     font-size: 1.5em;
-  }
-  .main-container {
-    margin: 0;
-  }
-  .about-container {
-    padding: 30px 20px 30px 20px;
-  }
-  .pitch {
-    padding: 10px;
-    max-width: 100%;
   }
   .navbar-item {
     width: 90%;
@@ -262,7 +272,7 @@ button:active {
 /* section {
   padding-top: 75px;
 } */
-#top-home {
+/* #top-home {
   background-color: var(--gray-300);
   height: 100vh;
 }
@@ -277,7 +287,7 @@ button:active {
 #top-contact {
   background-color: var(--gray-900);
   height: 100vh;
-}
+} */
 
 section {
   height: 100vh;
@@ -291,15 +301,135 @@ section {
   align-items: center;
 }
 
-h1 {
-  font-size: 40px;
-  line-height: 1.2;
-  margin: 0;
-}
-.revealUp {
+.reveal {
   opacity: 0;
   visibility: hidden;
 }
+/*  HERO LANDING PAGE  */
+.hero {
+  border-top: 0.3vh solid rgba(166, 166, 166, 0.173);
+  border-bottom: 0.3vh solid rgba(166, 166, 166, 0.171);
+  backdrop-filter: blur(5vh);
+  background: rgba(57, 57, 57, 0.091);
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
+  position: relative;
+  width: 100vw;
+  top: 26%;
+}
+
+.hero-title {
+  font-family: kiona;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light);
+  text-shadow: 0 0 28px #d3b1c2;
+  margin: 0.2em;
+}
+
+.hero-subtext {
+  font-family: "Alegreya SC", serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0 auto 2.5em;
+  max-width: 60%;
+  letter-spacing: 0.2em;
+}
+.hero-btn {
+  height: 3em;
+}
+.hero-btn:active {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+.glow-on-hover {
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: var(--light);
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #d091ca,
+    #8e59be,
+    #4633a8,
+    #080839,
+    #4633a8,
+    #8e59be,
+    #d091ca
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid rgba(166, 166, 166, 0.173);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.glow-on-hover:hover {
+  color: var(--dark);
+}
+.glow-on-hover:hover:after {
+  background: var(--orchid-c);
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 /* contact form */
 #container {
   width: 960px;
