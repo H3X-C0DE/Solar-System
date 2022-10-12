@@ -339,8 +339,8 @@ h1 {
   border-radius:5px;
   font-size:20px;
   padding:15px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;}
+  box-shadow:  8px 8px 8px black,
+               -8px -8px 8px #101111 ;}
 .flex-cont input{
   /*font-size:20px;
   margin:10px;
@@ -359,8 +359,8 @@ h1 {
 .name, .mail{
   margin-bottom:5px;
   border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
+  box-shadow:  8px 8px 8px black,
+               -8px -8px 8px #101111 ;
 }
 .flex-cont textarea{
 
@@ -374,14 +374,15 @@ h1 {
 .txt{
   margin-bottom:5px;
   border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
+  box-shadow:  8px 8px 8px black,
+               -8px -8px 8px #101111 ;
 
 }
 .sub{margin-bottom:5px;
   border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
+  padding:3px;
+  box-shadow:  8px 8px 8px black,
+               -8px -8px 8px #101111 ;
   align-items: center;
 }
 .info img{
@@ -392,19 +393,19 @@ h1 {
 img:hover{
   background-color: white;
 }
-/*input:hover{
-  box-shadow: inset 8px 8px 8px black,
-  inset -8px -8px 8px;
+input:hover{
+  box-shadow:  8px 8px 8px #101111 ,
+   -8px -8px 8px black;
   opacity:0.2;
 }
 .txt:hover{
-  box-shadow: inset -8px -8px -8px black
-  inset -8px -8px -8px;
+  box-shadow:  -8px -8px -8px #101111 
+   -8px -8px -8px black;
   opacity:0.3;
 
 }
 p:hover{
-  box-shadow: inset 8px 8px 8px 
-  inset -8px -8px 8px;
+  box-shadow:  8px 8px 8px #101111 
+   -8px -8px 8px black;
   opacity:0.3;
-}*/
+}
