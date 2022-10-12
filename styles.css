@@ -301,47 +301,47 @@ h1 {
   visibility: hidden;
 }
 /* contact form */
-#container{
-  width:960px;
-  margin:0 auto;
+#container {
+  width: 960px;
+  margin: 0 auto;
 }
-.paragraph{
-  margin:50px;
-  color:white;
-  font-size:20px;
+.paragraph {
+  margin: 50px;
+  color: white;
+  font-size: 20px;
 }
-.info{
-  
-  display:flex;
-  width:460px;
-  float:left;
+.info {
+  display: flex;
+  width: 460px;
+  float: left;
   justify-content: flex-start;
 }
-.submission{
-  float:left;
+.submission {
+  float: left;
   justify-content: center;
   align-items: right;
 }
-.flex-cont{
-  margin-top:35px;
-  width:460px;
-  float:right;
+.flex-cont {
+  margin-top: 35px;
+  width: 460px;
+  float: right;
 }
-.info paragraph{
-  border:none;
-  outline:none;
-  background:none;
-  font-size:20px;
-  color:white;
-  padding:5px 3px; 
+.info paragraph {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px 3px;
 }
-.paragraph{margin-bottom:5px;
-  border-radius:5px;
-  font-size:20px;
-  padding:15px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;}
-.flex-cont input{
+.paragraph {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
+}
+.flex-cont input {
   /*font-size:20px;
   margin:10px;
   font-weight:500;
@@ -349,47 +349,44 @@ h1 {
   border:none;
   border-radius:15px;
   box-shadow:*/
-  border:none;
-  outline:none;
-  background:none;
-  font-size:20px;
-  color:white;
-  padding:5px 5px; 
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px 5px;
 }
-.name, .mail{
-  margin-bottom:5px;
-  border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
+.name,
+.mail {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
 }
-.flex-cont textarea{
-
-  border:none;
-  outline:none;
-  background:none;
-  font-size:20px;
-  color:white;
-  padding:10px 5px; 
+.flex-cont textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px 5px;
 }
-.txt{
-  margin-bottom:5px;
-  border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
-
+.txt {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
 }
-.sub{margin-bottom:5px;
-  border-radius:5px;
-  box-shadow: inset 8px 8px 8px black,
-              inset -8px -8px 8px #101111 ;
+.sub {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
   align-items: center;
 }
-.info img{
-  float:left;
+.info img {
+  float: left;
   justify-content: flex-start;
-  align-items:left;
+  align-items: left;
 }
-img:hover{
+img:hover {
   background-color: white;
 }
 /*input:hover{
@@ -408,3 +405,123 @@ p:hover{
   inset -8px -8px 8px;
   opacity:0.3;
 }*/
+
+.grid {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.gc {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -0.25em;
+  min-height: 1px;
+  padding-left: 40px;
+  vertical-align: top;
+}
+
+.gc--1-of-3 {
+  width: 33.33333%;
+}
+
+.gc--2-of-3 {
+  width: 66.66666%;
+}
+
+.naccs {
+  position: relative;
+  max-width: 900px;
+  margin: 100px auto 0;
+}
+
+.naccs .menu div {
+  font-family: "Alegreya SC", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #eef3f7;
+  padding: 15px 20px 15px 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.naccs .menu div span.light {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  border-radius: 100%;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div.active span.light {
+  left: 0;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  border-radius: 0;
+}
+
+.naccs .menu div.active {
+  text-shadow: 0 0 28px #d3b1c2;
+  padding: 15px 20px 15px 20px;
+}
+
+ul.nacc {
+  position: relative;
+  height: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+  padding: 3vh;
+  border-radius: 1vh;
+  border: 0.3vh solid rgba(166, 166, 166, 0.171);
+  backdrop-filter: blur(5vh);
+  background: rgba(57, 57, 57, 0.091);
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  margin: 0;
+  opacity: 0;
+  transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+  transition-delay: 0.3s;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+ul.nacc li p {
+  padding: 3vh;
+  line-height: 3.5vh;
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: kiona;
+  src: url(Kiona-Regular.ttf);
+}
