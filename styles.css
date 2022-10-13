@@ -7,7 +7,8 @@
 }
 body {
   font-family: "Oxygen", sans-serif;
-  color: var(--body-color-light);
+  color: var(--body-color-ligt);
+  background-color: var(--darker);
   background-image: url("/assets/void-bg.jpg");
   height: 50%;
   width: 100%;
@@ -15,6 +16,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--light);
 }
 :root {
   --body-color-dark: #212529;
@@ -262,6 +271,15 @@ button:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* MOBILE */
 @media only screen and (max-width: 700px) {
@@ -280,8 +298,8 @@ button:active {
 }
 /* section {
   padding-top: 75px;
-} */
-/* #top-home {
+}
+#top-home {
   background-color: var(--gray-300);
   height: 100vh;
 }
@@ -297,18 +315,6 @@ button:active {
   background-color: var(--gray-900);
   height: 100vh;
 } */
-
-section {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  padding: 0;
-  text-align: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .reveal {
   opacity: 0;
@@ -421,10 +427,10 @@ section {
 }
 
 .glow-on-hover:hover {
-  color: var(--dark);
+  color: var(--light);
 }
 .glow-on-hover:hover:after {
-  background: var(--orchid-c);
+  background: var(--blue-pigment);
 }
 
 @keyframes glowing {
@@ -438,112 +444,196 @@ section {
     background-position: 0 0;
   }
 }
-
-/* contact form */
-#container {
-  width: 960px;
-  margin: 0 auto;
-}
-.paragraph {
-  margin: 50px;
-  color: white;
-  font-size: 20px;
-}
-.info {
+/* new contact from  */
+.form-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  text-align: center;
   display: flex;
-  width: 460px;
-  float: left;
-  justify-content: flex-start;
-}
-.submission {
-  float: left;
   justify-content: center;
-  align-items: right;
-}
-.flex-cont {
-  margin-top: 35px;
-  width: 460px;
-  float: right;
-}
-.info paragraph {
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 20px;
-  color: white;
-  padding: 5px 3px;
-}
-.paragraph {
-  margin-bottom: 5px;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 15px;
-  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
-}
-.flex-cont input {
-  /*font-size:20px;
-  margin:10px;
-  font-weight:500;
-  cursor: pointer;
-  border:none;
-  border-radius:15px;
-  box-shadow:*/
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 20px;
-  color: white;
-  padding: 5px 5px;
-}
-.name,
-.mail {
-  margin-bottom: 5px;
-  border-radius: 5px;
-  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
-}
-.flex-cont textarea {
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 20px;
-  color: white;
-  padding: 10px 5px;
-}
-.txt {
-  margin-bottom: 5px;
-  border-radius: 5px;
-  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
-}
-.sub {
-  margin-bottom: 5px;
-  border-radius: 5px;
-  box-shadow: inset 8px 8px 8px black, inset -8px -8px 8px #101111;
   align-items: center;
+  overflow: hidden;
 }
-.info img {
-  float: left;
-  justify-content: flex-start;
-  align-items: left;
+.container {
+  width: 85%;
+  border: 0.3vh solid rgba(166, 166, 166, 0.173);
+  backdrop-filter: blur(5vh);
+  background: rgba(57, 57, 57, 0.091);
+  text-shadow: rgba(0, 0, 0, 0.717) 1px 2px 3px;
+  margin: 70px auto;
+  padding: 60px 30px 30px;
 }
-img:hover {
-  background-color: white;
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/*input:hover{
-  box-shadow: inset 8px 8px 8px black,
-  inset -8px -8px 8px;
-  opacity:0.2;
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
 }
-.txt:hover{
-  box-shadow: inset -8px -8px -8px black
-  inset -8px -8px -8px;
-  opacity:0.3;
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--gray-600);
+}
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
 
+.content .left-side .details i {
+  font-size: 30px;
+  color: var(--light);
+  margin-bottom: 10px;
 }
-p:hover{
-  box-shadow: inset 8px 8px 8px 
-  inset -8px -8px 8px;
-  opacity:0.3;
-}*/
+.content .left-side .details {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.form-list {
+  list-style: none;
+}
+.form-list li {
+  margin: 0.5em;
+}
+.form-list a {
+  text-decoration: none;
+  color: var(--light);
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.form-list a:hover {
+  text-decoration: underline;
+}
+.left-side p {
+  font-size: 1.1em;
+  color: var(--gray-300);
+}
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--light);
+  margin: 0 10px 10px;
+}
+.gitlink {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.gitlink:hover {
+  text-decoration: underline;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: transparent;
+  border: 2px solid rgba(166, 166, 166, 0.173);
+  color: var(--light);
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  font-size: 1.2em;
+  color: var(--light);
+  min-height: 110px;
+  background: transparent;
+  border: 2px solid rgba(166, 166, 166, 0.173);
+  border-radius: 6px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: var(--light);
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgba(166, 166, 166, 0.173);
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+  .form-container {
+    overflow: visible;
+    margin-top: 6em;
+  }
+}
+@media (max-width: 820px) {
+  .container {
+    margin: 40px 0;
+  }
+  .form-container {
+    margin-top: 12em;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* about planets and other fact pages */
 
 .grid {
   list-style: none;

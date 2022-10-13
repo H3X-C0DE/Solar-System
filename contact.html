@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&family=Oxygen:wght@300&display=swap" rel="stylesheet">
-
-</head>
-<header id="navbar">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fbcbc0cc53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/script.js" defer></script>
+  </head>
+  <header id="navbar">
     <nav class="navbar-container nav-container">
       <a href="/" class="home-link">
         <img
@@ -52,38 +59,81 @@
       </div>
     </nav>
   </header>
-<body>
-    <div id="container">
-        <div class="info">
-          <p class="paragraph">This website is about the weired things happening in the space. You will come to know many interesting things and facts happening in the space.<br><br>
-            If you didnt get the information your seeking for 
-            please do contact us:<br><br>
-            
-            Mary W. Jackson NASA Headquarters<br>
-            300 E. Street SW, Suite 5R30<br>
-            Washington, DC 20546<br>
-            (202) 358-0001 (Office)<br>
-            (202) 358-4338 (Fax)<br><br>
-            or you can submit a question to Contact NASA.<br><br>
-        
-        <img src="images/facebook.png" alt="facebook">
-            <img src="images/instagram.png" alt="instagram">
-            <img src="images/twitter.png" alt="twitter">
-</p>
-    </div>
-    <div class="flex-cont">
-        <form>
-            <label for="fname"></label><br>
-            <input class="name" type="text" id="fname" name="fname" placeholder="Enter your name"><br>
-            <label for="mail"></label><br>
-            <input class="mail"type="email" id="email" name="email" placeholder="Enter your mail id"><br><br><br>
-            <textarea class="txt" name="message" rows="10" columns="40" placeholder="write your feedback"></textarea><br><br>
-            <input class="sub" type="submit" value="submit">
-            
-        </form>
-    </div>
-</div>
-</div>
-    
-</body>
+
+  <body>
+    <section class="form-container">
+      <div class="container reveal">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <h1 class="form-title">NASA Address</h1>
+              <p>Mary W. Jackson NASA Headquarters</p>
+              <p>300 E. Street SW, Suite 5R30</p>
+              <p>Washington, DC 20546</p>
+              <p>(202) 358-0001 (Office)</p>
+              <p>(202) 358-4338 (Fax)</p>
+            </div>
+            <i></i>
+            <div class="details">
+              <i class="fas fa-users"></i>
+              <h2 class="form-title">Assignment Team</h2>
+              <ul class="form-list">
+                <li>
+                  <a class="fab fa-github" href="https://github.com/H3X-C0DE"
+                    >&nbsp;H3X-C0DE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="fab fa-github"
+                    href="https://github.com/ingridkodehode"
+                    >&nbsp;ingridkodehode</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="fab fa-github"
+                    href="https://github.com/suganthiganapathy"
+                    >&nbsp;suganthiganapathy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="email details">
+              <i class="fas fa-graduation-cap"></i>
+              <h2 class="form-title">Assignment By:</h2>
+              <p>Kodehode, Bergen</p>
+              <p>jobloop.no</p>
+            </div>
+          </div>
+          <div class="right-side">
+            <h3 class="topic-text">Send us a message</h3>
+            <p class="form-a">
+              This was a group assignment that we received in Oct.2022. hench
+              the creepy dark vibe of the website, we thought since it's in
+              october we might as well have a spooky theme for our assignment.
+            </p>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" />
+              </div>
+              <textarea
+                class="input-box message-box"
+                placeholder="write a message"
+              ></textarea>
+              <div class="button">
+                <input type="button" value="Send Now" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  </body>
 </html>
