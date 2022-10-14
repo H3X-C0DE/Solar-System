@@ -9,7 +9,7 @@ body {
   font-family: "Oxygen", sans-serif;
   color: var(--body-color-ligt);
   background-color: var(--darker);
-  background-image: url("/assets/void-bg.jpg");
+  background-image: url("/assets/img/void-bg.jpg");
   height: 50%;
   width: 100%;
   background-attachment: fixed;
@@ -266,7 +266,7 @@ button:active {
   }
 }
 .landing-page {
-  background-image: url(/assets/the-void.jpg);
+  background-image: url(/assets/img/the-void.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +284,7 @@ button:active {
 /* MOBILE */
 @media only screen and (max-width: 700px) {
   .landing-page {
-    background-image: url(/assets/mobil-void.jpg);
+    background-image: url(/assets/img/mobil-void.jpg);
   }
   .hero-title {
     margin: 0.5em;
@@ -752,5 +752,5 @@ ul.nacc li p {
 
 @font-face {
   font-family: kiona;
-  src: url(Kiona-Regular.ttf);
+  src: url(/assets/Kiona-Regular.ttf);
 }
