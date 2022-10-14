@@ -9,7 +9,7 @@ body {
   font-family: "Oxygen", sans-serif;
   color: var(--body-color-ligt);
   background-color: var(--darker);
-  background-image: url("/assets/img/void-bg.jpg");
+  /* background-image: url("/assets/img/void-bg.jpg"); */
   height: 50%;
   width: 100%;
   background-attachment: fixed;
@@ -24,6 +24,9 @@ h4,
 h5,
 p {
   color: var(--light);
+}
+.hidden {
+  display: none;
 }
 :root {
   --body-color-dark: #212529;
@@ -148,7 +151,11 @@ button:active {
   width: 40px;
   margin: 0 10px;
 }
-
+.logo-title {
+  font-family: "Alegreya SC", serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 #navbar-toggle {
   cursor: pointer;
   border: none;
@@ -446,6 +453,7 @@ button:active {
 }
 /* new contact from  */
 .form-container {
+  background-image: url("/assets/img/void-bg.jpg");
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -634,7 +642,17 @@ button:active {
   }
 }
 /* about planets and other fact pages */
-
+.info-container {
+  background-image: url("/assets/img/void-bg.jpg");
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .grid {
   list-style: none;
   margin-left: -40px;
