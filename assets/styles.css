@@ -302,6 +302,15 @@ button:active {
   .navbar-item {
     width: 90%;
   }
+  .naccs .menu div {
+    font-size: 20px;
+  }
+  .ul.nacc {
+    font-size: 10px;
+  }
+  .ul.nacc li {
+    padding: 2vh;
+  }
 }
 /* section {
   padding-top: 75px;
