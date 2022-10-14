@@ -302,6 +302,33 @@ button:active {
   .navbar-item {
     width: 90%;
   }
+  .naccs .menu div span {
+    letter-spacing: normal;
+    font-size: 15px;
+  }
+
+  .mobilesetting {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .mobilesetting .ul.nacc li p {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li.active {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li p.active {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li {
+    font-size: 5px;
+    padding: 0;
+  }
 }
 /* section {
   padding-top: 75px;
