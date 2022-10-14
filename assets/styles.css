@@ -302,14 +302,32 @@ button:active {
   .navbar-item {
     width: 90%;
   }
-  .naccs .menu div {
-    font-size: 20px;
+  .naccs .menu div span {
+    letter-spacing: normal;
+    font-size: 15px;
   }
-  .ul.nacc {
-    font-size: 10px;
+
+  .mobilesetting {
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
-  .ul.nacc li {
-    padding: 2vh;
+
+  .mobilesetting .ul.nacc li p {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li.active {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li p.active {
+    font-size: 5px;
+    padding: 0;
+  }
+  .mobilesetting .ul.nacc li {
+    font-size: 5px;
+    padding: 0;
   }
 }
 /* section {
