@@ -308,6 +308,16 @@ button:active {
   .navbar-item {
     width: 90%;
   }
+  div.gc--1-of-3 {
+    width: 100%;
+  }
+  div.gc--2-of-3 {
+    width: 100%;
+  }
+  div.gc--2-of-3 ul.nacc li.active {
+    max-height: 57vh;
+    width: 100vw;
+  }
 }
 
 .reveal {
@@ -734,7 +744,7 @@ ul.nacc li.active {
   transform: translateX(0px);
   overflow-y: scroll;
   overflow-x: clip;
-  max-height: 80vh;
+  max-height: 100%;
 }
 
 ul.nacc li p {
