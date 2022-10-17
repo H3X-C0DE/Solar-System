@@ -756,7 +756,7 @@ ul.nacc li.active {
   transform: translateX(0px);
   overflow-y: scroll;
   overflow-x: clip;
-  max-height: 100%;
+  /* max-height: 100%; */
 }
 
 ul.nacc li p {
