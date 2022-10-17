@@ -315,8 +315,20 @@ button:active {
     width: 100%;
   }
   div.gc--2-of-3 ul.nacc li.active {
-    max-height: 57vh;
+    max-height: 60vh;
     width: 100vw;
+  }
+  div.naccs {
+    margin: 70px auto 0;
+  }
+  ul.nacc li.active {
+    overflow-y: show;
+  }
+  .naccs .menu div.active {
+    padding: 0px 20px 0px 20px;
+  }
+  .naccs .menu div.mobil {
+    padding: 0px 20px 0px 40px;
   }
 }
 
