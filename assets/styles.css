@@ -321,9 +321,7 @@ button:active {
   div.naccs {
     margin: 85px auto 0;
   }
-  ul.nacc li.active {
-    overflow-y: show;
-  }
+
   .naccs .menu div.active {
     padding: 0px 20px 0px 20px;
   }
@@ -331,7 +329,11 @@ button:active {
     padding: 0px 20px 0px 40px;
   }
 }
-
+@media only screen and (max-width: 420px) {
+  .menu span {
+    font-size: 0.8em;
+  }
+}
 .reveal {
   opacity: 0;
   visibility: hidden;
